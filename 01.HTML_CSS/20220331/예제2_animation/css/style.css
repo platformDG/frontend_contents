@@ -1,0 +1,46 @@
+@charset "UTF-8";
+.box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  /* animation */
+  animation-name: bgcolorchange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  /* animation-timing-function: linear; */
+
+}
+
+.box h1{
+  font-size: 14px;
+}
+@keyframes bgcolorchange {
+  /* 0%{
+    left: 0px;
+    background: red;
+  }
+  50%{
+    left: 250px;
+    background: yellow;
+  }
+  100%{
+    left: 0px;
+    background: red;
+  } */
+  from{
+    left: 0px;
+    background: red;
+  }
+  to{
+    left: 250px;;
+    background: yellow;
+  }
+}

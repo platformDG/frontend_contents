@@ -1,0 +1,59 @@
+@charset "UTF-8";
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+ul, ol { list-style: none; }
+a { color: black; text-decoration: none; }
+
+#container {
+  width : 600px;
+  margin: 20px auto;
+}
+#navi {
+  width: 600px;
+  overflow: hidden;
+}
+#navi ul li{
+  width: 120px;
+  float: left;
+}
+
+#navi ul li img {
+  width: 100%;
+  border: 3px solid white;
+}
+
+#navi .page-wrap {/* .page-wrap 초기 너비값을 설정 */
+  width: 1800px;
+}
+
+#navi .page-wrap .page{
+  float: left;
+}
+.navi-wrap {
+  position: relative;
+}
+.navi-wrap > img {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+.navi-wrap > .next {
+  right: 0;
+  transform: translate(100%, -50%);
+}
+.navi-wrap > .prev {
+  left: 0;
+  transform: translate(-100%, -50%) rotate(180deg);
+}
+
+#main {
+  position: relative;
+  width:600px;
+  height: 452px;
+}
+
+#main img {
+  position: absolute;
+  width: 100%;
+  border: 3px solid white;
+}

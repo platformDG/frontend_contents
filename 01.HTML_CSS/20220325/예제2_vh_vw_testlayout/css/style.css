@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/* @import는 최상단에 등록한다. */
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* 상단으로 이동 버튼 */
+#go-to-top {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #f1f1f1;
+  border-radius: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+#go-to-top a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/go_to_top.png');
+  background-position: center center;
+  background-color: #ffffff;
+}
+/**************************************** 상단 헤더 영역 ****************************************/
+#header {
+  position: fixed; /*상단헤더를 position을 fixed로 설정하면 헤더뒤에 이미지가 들어가게 된다.*/
+  border-bottom: 1px solid #f1f1f1;
+  overflow: hidden;
+  padding: 0 15px; /* 좌우가 30 패딩 들어가게 됨. */
+  /* padding: 상하, 좌우 */
+  height: 60px;
+  width: 100%;
+  background-color: rgba(255,255,255,.45);
+  /* padding: 0 30px 0 15px; */
+}
+/**************************************** 상단로고 영역 ****************************************/
+#header #logo {
+  float: left;
+}
+#header #logo h1 a {
+  line-height: 60px;
+  font-weight: 100; /* 폰트 두께 */
+  color: green;
+  font-family: 'Hurricane', cursive; /* 폰트체 변경 */
+  text-transform: uppercase; /* uppercase: 대문자표기,  lowercase : 소문자표기 capitalize : 첫글자 대문자표기 */
+}
+
+/**************************************** 상단 GNB 영역 ****************************************/
+#header #gnb {
+  float: right;
+  margin-right: 30px;
+}
+
+#header #gnb ul{
+  overflow: hidden;
+}
+
+#header #gnb ul li{
+  float: left;
+  height: 60px;
+  margin-right: 10px;
+}
+/* odd : 홀수의 순서에 적용 even : 짝수의 순서에 적용 */
+/*
+#header #gnb ul li:nth-child(odd) a {
+  color: green;
+}
+*/
+/* 2n : 2의 배수 */
+#header #gnb ul li:nth-child(2n + 2) a {
+  color: green;
+}
+
+#header #gnb ul li:last-child {
+  margin-right: 0;
+}
+
+#header #gnb ul li a {
+  line-height: 60px;
+}
+
+/*************************************** 메인배너 영역 ***************************************/
+#mainbanner {
+  /* height: 850px; */
+  /* height: calc( 100vh - 61px );  */ /*상단헤더 크기만큼 빼줘야지 한화면에 딱떨어지게 이미지가 보여진다.*/
+  height: 100vh;
+  background-image: url('../img/main_banner_img.jpg');
+  background-position: center top;
+  background-size: cover;
+}
+/*************************************** 컨텐츠 영역 ***************************************/
+#container {
+  width: 1200px;
+  min-height: 500px; /*컨텐츠가 없어도 어느정도 영역은 차지해야됨 */
+  margin: 0 auto; /* 영역 위치 선정을 마진으로 정리 */
+}
+
+#container h2{
+  text-align: center;
+  color: #666666;
+  padding: 30px 0 15px;
+  /* padding-top: 30px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 15px; */
+  text-transform: uppercase;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 15px; /* 공간을 줄때는 h2같은경우가 고정되어 있기 때문에 h2에 주는게 좋다. */
+}
+/********************************** section 공통 스타일 **********************************/
+#container section {
+  overflow: hidden;
+}
+#container section .items {
+  float: left;
+}
+#container section .items h3 {
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+
+#container section .items img {
+  /* width를 해주게 되면 부모태그 기준으로 이미지 크기가 책정 된다. */
+  width: 100%;
+}
+
+/* type-a */
+#container section.type-a .items{
+  /* width: calc( 25% - 40px ); box-sizing 속성을 사용하지 않을때 */
+  width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  min-height: 100px;
+  text-align: center;
+}
+#container section.type-a .items .bg-box {
+  height: 150px; /* background 이미지는 크기가 없기 때문에 사이즈를 지정해준다. */
+  background-size: cover;
+}
+#container section.type-a .items:nth-child(4n + 1) .bg-box {
+  background-image: url('../img/m_01.png');
+}
+#container section.type-a .items:nth-child(4n + 2) .bg-box {
+  background-image: url('../img/m_02.png');
+}
+#container section.type-a .items:nth-child(4n + 3) .bg-box {
+  background-image: url('../img/m_03.png');
+}
+#container section.type-a .items:nth-child(4n + 4) .bg-box {
+  background-image: url('../img/m_04.png');
+}
+/* type-b */
+#container section.type-b .items {
+  width: 25%;
+  text-align: center;
+}
+#container section.type-b .items .box{
+  min-height: 100px;
+  padding: 10px;
+  margin: 0 10px 20px;
+  border: 1px solid #f1f1f1;
+}
+
+
+/*************************************** 푸터 영역 ***************************************/
+#footer {
+  text-align: center;
+  border-top: 1px solid #f1f1f1;
+  padding: 20px 0;
+  margin-top: 50px;
+  background: #f9f9f9;
+}
+
+#footer .inner{
+  width: 1200px;
+  margin: 0 auto;
+}

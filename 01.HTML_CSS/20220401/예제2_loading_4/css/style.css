@@ -1,0 +1,104 @@
+@charset "UTF-8";
+body {
+  background: black;
+}
+@keyframes fadeout {
+  from{
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  to{
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
+@keyframes textAni {
+  from{
+    opacity: 0;
+    transform: translateX(-5px);
+  }
+  10%{
+    transform: translateX(5px);
+  }
+  15%{
+    transform: translateX(0px);
+  }
+  to{
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+#wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#spinner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*
+    display flex와 같은 방법.
+    line-height : 60px;
+    text-align : center
+   */
+  width: 60px;
+  height: 60px;
+}
+#wrap #spinner p {
+  font-size: 12px;
+  color: white;
+  animation-name: textAni;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+#spinner div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid rgba(110,240,50,1); */
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 100%;
+  opacity: 0;
+  animation-name: fadeout;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  /* box-shadow: 0 0 20px rgba(196, 255, 20, 1); */
+}
+#spinner div:nth-of-type(1) {
+  border-color: red;
+    /* animation-delay: 1s; */
+}
+#spinner div:nth-of-type(2) {
+  border-color: orange;
+    animation-delay: 1s;
+}
+#spinner div:nth-of-type(3) {
+  border-color: yellow;
+    animation-delay: 2s;
+}
+#spinner div:nth-of-type(4) {
+  border-color: green;
+    animation-delay: 3s;
+}
+#spinner div:nth-of-type(5) {
+  border-color: blue;
+    animation-delay: 4s;
+}
+#spinner div:nth-of-type(6) {
+  border-color: #000080;
+    animation-delay: 5s;
+}
+#spinner div:nth-of-type(7) {
+  border-color: purple;
+    animation-delay: 6s;
+}

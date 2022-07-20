@@ -1,0 +1,44 @@
+//코리아IT 관리페이지
+https://itdg.kedutms.com/
+
+//코리아it 웹하드
+http://kedudisk.com/pm/
+id : it3000
+pw : koreait11!
+
+//HTML 태그사용 빈도수 확인
+www.advancedwebranking.com/seo/html-study
+
+//css 압출할수있는 사이트
+https://www.toptal.com/developers/cssminifier/
+
+//강사님블로그
+https://quantumcode.tistory.com/
+
+//구글에서 폰트가져오기
+https://fonts.google.com/
+
+//브라우저별 사용할수 있는 css규격찾아줌
+https://caniuse.com/
+
+//이미지대체해주는
+https://placeholder.com/
+
+//만들어진 사이트
+https://www.dbcut.com/bbs/index.php
+https://www.gdweb.co.kr/main/
+
+//그라데이션
+https://cssgradient.io/
+
+//아이콘
+https://www.flaticon.com/
+
+//색감 맞춰주는 사이트
+https://colorhunt.co/
+
+//swiper
+https://swiperjs.com/demos
+
+//포트폴리오
+https://tngus5691.cafe24.com/portfolio

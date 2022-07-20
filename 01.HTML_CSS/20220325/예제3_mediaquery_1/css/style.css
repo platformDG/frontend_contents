@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+html,body { height: 100%; }
+body {
+  background-color: red;
+}
+
+#wrap{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* background: green; */
+  /* display: table;
+  width: 100vw;
+  height: 100vh; */
+}
+
+#wrap::before {
+  content: 'red';
+  font-size: 2em; /* 부모요소(body)의 font-size : 16px 기준으로  2배로 32px이 된다. */
+  color: white;
+}
+
+/* media query 영역 */
+/* media query 반응형 992px시점에 아래 소스코드에 맞게 변경이 된다. */
+/* max-width의 숫자를 내림차순이 되어야 한다.(min-width는 오름차순) 600px를 먼저 쓰고 이후에 992px를 쓰면 992px기준으로만 작동된다.
+  992px에서는 폰트사이즈를 건들지 않았기때문에 600px 기준으로 폰트사이즈가 적용된다. */
+@media screen and ( max-width: 992px ) {
+  body { background: green; }
+  #wrap::before {
+    content: 'green';
+  }
+}
+
+@media screen and ( max-width: 600px ) {
+  body{ background: blue; font-size : 14px; }
+  #wrap::before {
+    content: 'blue';
+  }
+}
+/*/* 최소 최대 크기의 구간을 정하는 방
+@media screen and ( min-width: 320px ) and ( max-width: 450px ){
+  body{ background: yellow; font-size: 10px; }
+  #wrap::before {
+    content: 'yellow';
+    color: #666666;
+  }
+}
+*/
+
+/* 992px이상일때는 media가 책정되지 않음.
+   landscape는 가로가 긴것인데. 모니터가 가로가 김.
+    */
+@media screen and ( orientation : landscape ) {
+  body{ background: black; }
+}
+
+@media screen and ( orientation : portrait ) {
+  body{ background: white; }
+}

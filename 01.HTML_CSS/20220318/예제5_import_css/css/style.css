@@ -1,0 +1,6 @@
+@charset "UTF-8";
+/* css에 초기화 css 포함가능 약간 로딩이 느릴수도 있음. */
+/* @import "./initial.css"; */
+body{background-color: purple;}
+body{background-color: red; color: white;}
+body{background-color: green;}

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?1family=Noto+Sans+KR:wght@500&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #666666;
+  min-width: 760px; /* 화면이 줄어들면 메뉴가 레이아웃 틀어짐 방지 */
+}
+a {color: #666666;}
+/* header layout */
+#main-header {
+  height: 60px;
+  line-height: 60px; /* 자식에 상속이 된다. */
+  padding-left: 10px;
+  background: #1d4988;
+  border-bottom: 1px solid black;
+}
+#main-header h1 a{
+    color: white;
+}
+/* main-gnb layout */
+#main-gnb{
+  overflow: hidden;
+  border-bottom: 1px solid black;
+  background: #32394a
+}
+/* #main-gnb .left, #main-gnb .right */
+/* #main-gnb ul.left, #main-gnb ul.right */
+#main-gnb ul{
+  overflow: hidden;
+}
+/* main-gnb > ul.left main-gnb의 바로 밑에 ul만 하기 위함. */
+#main-gnb ul.left{
+  float: left;
+}
+#main-gnb ul.right{
+  float: right;
+}
+#main-gnb ul li{
+  float: left;
+}
+
+#main-gnb a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;/*700*/
+}
+
+/* 컨텐츠 영역 */
+#wrap{
+  overflow: hidden;
+  background: #71b1d1;
+}
+
+#wrap #main-lnb {
+  float: left;
+  width: 200px;
+}
+
+#wrap #content-wrap {
+  float: left;
+  width: calc( 100% - 200px );
+  background-color: yellow;
+}
+#main-lnb > ul > li > a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  border-bottom: 1px solid #96d6d6;
+  color: white;
+}
+#content{
+  background-color: white;
+  padding: 30px;
+}
+
+/* 하단 영역 */
+#main-footer{
+  padding: 10px;
+  border-top: 3px solid black;
+  text-align: center;
+}

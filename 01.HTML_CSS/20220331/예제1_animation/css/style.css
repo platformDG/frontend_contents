@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  background: green;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  /* animation */
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.box:nth-child(1){
+  animation-name: rotate1;
+  animation-duration: 2s;
+}
+.box:nth-child(2){
+  top: 100px;
+  animation-name: rotate2;
+  animation-duration: 2s;
+}
+.box:nth-child(3){
+  top: 200px;
+  animation-name: rotate3;
+  animation-duration: 2s;
+}
+.box h1{
+  font-size: 14px;
+}
+@keyframes rotate1 {
+/* from to는 시작과 끝만 표현이 된다. */
+/* %를 활용하면 중간에 표현을 더 할 수 있다. */
+/* from to %를 활용할 수 있다. */
+  from {
+  /* 변화 코드 입력 영역 */
+  left: 0;
+  background: yellow;
+  }
+  50%{
+  /* 변화 코드 입력 영역 */
+  transform: rotate(360deg);
+  background: blue;
+  }
+  to {
+  left: calc(100% - 100px);
+  background: purple;
+  }
+}
+@keyframes rotate2 {
+/* from to는 시작과 끝만 표현이 된다. */
+/* %를 활용하면 중간에 표현을 더 할 수 있다. */
+/* from to %를 활용할 수 있다. */
+  from {
+  /* 변화 코드 입력 영역 */
+  left: 0;
+  background: yellow;
+  }
+  50%{
+  /* 변화 코드 입력 영역 */
+  transform: rotate(360deg);
+  background: blue;
+  }
+  to {
+  left: calc(100% - 100px);
+  top: calc( 100% - 100px );
+  background: purple;
+  }
+}
+@keyframes rotate3 {
+/* from to는 시작과 끝만 표현이 된다. */
+/* %를 활용하면 중간에 표현을 더 할 수 있다. */
+/* from to %를 활용할 수 있다. */
+  from {
+  /* 변화 코드 입력 영역 */
+  left: 0;
+  background: yellow;
+  }
+  50%{
+  /* 변화 코드 입력 영역 */
+  transform: rotate(360deg);
+  background: blue;
+  }
+  to {
+  /* left: 300px; */
+  top: calc( 100% - 100px );
+  background: purple;
+  }
+}

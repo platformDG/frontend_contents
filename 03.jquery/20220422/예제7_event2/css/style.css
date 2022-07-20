@@ -1,0 +1,13 @@
+@charset "UTF-8";
+html,body {height: 100%;}
+a{color: #666666;}
+ol, ul, li {list-style: none;}
+
+span{
+  position: fixed;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  background: #336370;
+  color: #ffffff;
+}

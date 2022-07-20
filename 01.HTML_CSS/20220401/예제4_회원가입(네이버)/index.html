@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/default.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./js/prefix.js"></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1><a href="#" class="logo">Logo</a></h1>
+    </div>
+    <div id="container">
+      <div id="content">
+        <form>
+          <table>
+            <tr>
+              <td>
+                <h3><label for="id">아이디</label></h3>
+                <div class="input-box">
+                  <input type="text" id="id" name="id" required>
+                  <span class="txt">@naver.com</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3><label for="pw">비밀번호</label></h3>
+                <div class="input-box focus">
+                  <input type="password" id="pw" name="pw" required>
+                  <span>img</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3><label for="pw2">비밀번호재확인</label></h3>
+                <div class="input-box focus">
+                  <input type="password" id="pw2" name="pw2" required>
+                  <span>img</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3><label for="user_name">이름</label></h3>
+                <div class="input-box focus">
+                  <input type="text" id="user_name" name="user_name" required>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3><label for="year">생년월일</label></h3>
+
+                  <div class="input-group">
+                    <div class="input-box">
+                    <input type="text" id="year" name="year" maxlength="4" placeholder="년(4자)" size="6">
+                    </div>
+                    <div class="input-box">
+                    <select id="month" name="month">
+                      <option value="월">월</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                    </select>
+                    </div>
+                    <div class="input-box">
+                    <input type="text" id="date" name="date" maxlength="2" size="6" placeholder="일">
+                    </div>
+
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3><label for="gender">성별</label></h3>
+                <div class="input-box">
+                  <div class="gender-group">
+                    <select id="gender" name="gender">
+                      <option value="성별">성별</option>
+                      <option value="male">남자</option>
+                      <option value="female">여자</option>
+                      <option value="none">선택 안함</option>
+                    </select>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3><label for="email">본인 확인 이메일</label><span class="select">(선택)</span></h3>
+                <div class="input-box">
+                  <input type="email" id="email" class="focus" name="email" placeholder="선택입력">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3><label for="phone">휴대전화</label></h3>
+                <div class="input-box phone">
+                  <ul>
+                    <li>
+                      <div class="country">
+                        <select id="local-number" name="local">
+                          <option value="그레나다 +1 473">그레나다 1+ 473</option>
+                          <option value="그리스 +30">그리스 +30</option>
+                          <option value="대한민국 +82" selected>대한민국 +82</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="mobile-area">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}.[0-9]{4}.[0-9]{4}" placeholder="전화번호 입력">
+                        <button type="button">인증번호 받기</button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="authNoBox">
+                        <input type="text" id="auth-num" name="auth-num" maxlength="4" placeholder="인증번호 입력하세요" disabled>
+                      </div>
+                    </li>
+                  </ul>
+                  <div>
+              </td>
+            </tr>
+          </table>
+          <div class="btn-area">
+          </div>
+          <button type="submit" id="sign" name="sign">가입하기</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

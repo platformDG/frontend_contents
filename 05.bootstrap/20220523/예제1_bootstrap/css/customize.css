@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.container .col, .container-fluid .col{
+  /* background-color: red; */
+  color: #666666;
+  text-align: center;
+}
+.container-fluid .row +.row {
+  margin-top: 10px;
+}
+.col .table + .btn {
+  float: right;
+}
+.col:nth-child(odd){
+  /* background-color: beige; */
+}
+.col.text {
+  padding: 20px;
+}
+
+.col.img-box{
+  /* background-image: url('../img/thumb_nail01.jpg'); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.container-fluid .col.img-box{
+  background-color: transparent;
+}
+.img-box.img-thumbnail{
+  padding: 1.25rem;
+}

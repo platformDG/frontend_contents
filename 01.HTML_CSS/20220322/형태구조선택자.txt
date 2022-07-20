@@ -1,0 +1,8 @@
+first-child
+last-child
+nth-child(1) --> nth-of-type(1)
+nth-child(2n) --> nth-of-type(2n)
+nth-child(2n+1)  --> nth-of-type(2n+1)
+nth-child(odd)  --> nth-of-type(odd)
+nth-child(even)  --> nth-of-type(even)
+nth-last-child(2) --> nth-last-of-type(2)

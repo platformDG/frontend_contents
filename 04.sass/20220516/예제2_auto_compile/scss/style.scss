@@ -1,0 +1,63 @@
+@charset "UTF-8";
+$height: 100px;
+$boxSizs: 100, 200, 300;
+$color : #408ddd;
+*{ margin: 0; padding: 0;}
+a{
+  text-decoration: none;
+  color : #fff;
+}
+ul, li {
+  list-style: none;
+}
+#header {
+  height: $height;
+  background: $color;
+  overflow: hidden;
+  h1{
+    float: left;
+    line-height: $height;
+  }
+  #gnb {
+    float: right;
+    ul{
+      overflow: hidden;
+      li{
+        float: left;
+        a{
+          line-height: $height;
+        }
+      }
+    }
+  }
+}
+
+/* box layout */
+// .box:nth-child(1){
+//   width: 100px;
+//   height: 100px;
+// }
+// .box:nth-child(2){
+//   width: 200px;
+//   height: 200px;
+// }
+// .box:nth-child(3){
+//   width: 300px;
+//   height: 300px;
+// }
+@mixin common-box {
+  position: absolute;
+  // display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $color;
+}
+
+@each $size in $boxSizs {
+  .box-#{$size}{
+    @include common-box;
+    width: #{$size}px;
+    height: #{$size}px;
+  }
+}

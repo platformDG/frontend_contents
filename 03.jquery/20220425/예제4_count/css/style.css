@@ -1,0 +1,27 @@
+@charset "UTF-8";
+html,body {height: 100%;}
+body {
+  background-color: black;
+  transition: 2s;
+}
+ol, ul, li {list-style: none;}
+a { color: #666666; }
+
+.flex-box {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.count{
+  width : 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: orange;
+  color: #ffffff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

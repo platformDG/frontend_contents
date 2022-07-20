@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>input_number</title>
+</head>
+
+<body>
+  <h1>select device</h1>
+  <form method="get">
+    <select id="kind" name="kind">
+      <option value="phone">phone</option>
+      <option value="tablet">tablet</option>
+    </select>
+    <select id="kindofdevice" name="kindofdevice">
+      <optgroup label="iphone">
+        <option value="galaxy">galaxy</option>
+        <option value="galaxy2">galaxy2</option>
+        <option value="galaxy3">galaxy3</option>
+      </optgroup>
+      <optgroup label="tablet">
+        <option value="galaxytab">galaxytab</option>
+        <option value="galaxytab2">galaxytab2</option>
+        <option value="galaxytab2">galaxytab3</option>
+      </optgroup>
+    </select>
+    <input id="quantity" type="number" name="quantity" min="1" max="5" step="2" value="5">
+    <button type="submit">구매하기</button>
+  </form>
+</body>
+
+</html>

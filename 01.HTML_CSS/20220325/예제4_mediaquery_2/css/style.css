@@ -1,0 +1,45 @@
+@charset "UTF-8";
+html,body { height: 100%; }
+body{ background-color: black; }
+#wrap {
+  display: flex;
+  justify-content: center; /*가로 정렬*/
+  align-items: center; /*세로 정렬*/
+  height: 100vh;
+  /* background-color: black; */
+}
+
+#wrap::before {
+  content: 'wide PC';
+  font-size: 2em;
+  color: white;
+}
+
+/* media query 영역 */
+@media screen and ( max-width: 1200px ) {
+  body { background: red; }
+  #wrap::before {
+    content: 'middle size pc';
+  }
+}
+
+@media screen and ( max-width: 1024px ) {
+  body{ background: blue; }
+  #wrap::before {
+    content: 'Desktop(CRT)';
+  }
+}
+
+@media screen and ( max-width: 768px ){
+  body{ background: green;}
+  #wrap::before {
+    content: 'PAD(ipad-mini)';
+  }
+}
+@media screen and ( max-width: 380px ){
+  body{ background: yellow;}
+  #wrap::before {
+    content: 'mobile';
+    color: black;
+  }
+}

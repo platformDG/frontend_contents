@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* body{ background: rgb(171, 228, 151)} */
+
+#wrap {
+  width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
+  /* background: rgb(171, 228, 151) */
+}
+
+#lnb {
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ff6a67;
+  /* background: rgba(0,0,0, .5); */
+  z-index: 300;
+}
+
+#lnb h1 a {
+  color : #ffffff;
+  font-size: 32px;
+}
+#lnb h1 {
+  margin-bottom: 20px;
+}
+#container {
+  padding-left: 300px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#top-menu {
+  height: 50px;
+  overflow: hidden;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+#top-menu ul {
+  overflow: hidden;
+  float: right;
+}
+
+#top-menu ul li {
+  float: left;
+  margin-left: 10px;
+}
+#top-menu ul li:first-child {
+  margin-left: 0;
+}
+#top-menu ul li a {
+  line-height: 50px;
+}
+
+.contents {
+  padding: 50px;
+  box-sizing: border-box;
+}
+.contents h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background: #f1f1f1;
+}
+
+/* menu tree management customize style */
+/* 메뉴트리 현재페이지 색상에 맞게 재정의 */
+.menu-tree-management {
+  /* border: 1px solid #ff6a67; */
+  /* background: #ff6a67; */
+  /* background: none; background-color: transparnt; */
+  border : 0;
+  background: none;
+}
+/* 타이틀 글자색 재정의 */
+.menu-tree-management .title {
+  color: white;
+}
+/* 서브메뉴 글자색 재정의 */
+.menu-tree-management .table-ctn .menu-tree .submenu > li {
+  color: white;
+}
+.menu-tree-management .table-ctn .menu-tree .submenu > li:hover {
+  color: #1a73c4;
+}
+/* 메뉴 글자색 재정의 */
+.menu-tree-management input[type=checkbox] + label {
+  color: white;
+}
+
+@media screen and ( max-width: 1200px ) {
+  #wrap {
+    width: 100%;
+  }
+}
+
+/* @media screen and ( max-width: 800px ) {
+  #wrap {
+    width: 800px;
+  }
+} */

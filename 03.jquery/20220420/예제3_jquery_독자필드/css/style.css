@@ -1,0 +1,19 @@
+@charset "UTF-8";
+html,body {height: 100%;}
+a{color: #666666;}
+ol, ul, li {list-style: none;}
+li{ position: relative; }
+
+/* ul li:nth-child(odd){
+  color: red;
+}
+
+ul li:nth-child(even){
+  color: green;
+} */
+
+li {
+  min-height: 20px;
+  line-height: 20px;
+  border: 1px solid blue;
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?1family=Noto+Sans+KR:wght@500&display=swap');
+html,body { height: 100%; }
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #666666;
+  /* background: #32a852; */
+}
+a {color: #666666;} /* #666는 축약형 */
+.box {
+  height: 100vh;
+  /* height: 100px; */
+  /* width: 50vW; */
+  background: green;
+}
+.item {
+    height: 100px;
+    width: 500px;
+    background: red;
+    /* display: none; */
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+html,body {height: 100%;}
+a{color: #666666;}
+ol, ul, li {list-style: none;}
+
+.box {
+  background-color: #34861b;
+  margin-bottom: 20px;
+}

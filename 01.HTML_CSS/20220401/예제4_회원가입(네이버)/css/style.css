@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body{
+  background: #f5f6f7;
+}
+#wrap, #container {
+  max-width: 768px;
+  min-height: 460px;
+  margin: 0 auto;
+}
+#wrap #header{
+  padding: 60px 0 20px;
+}
+#wrap #header .logo {
+  display: block;
+  width : 240px;
+  height: 44px;
+  margin: 0 auto;
+  background-image: url('../img/m_naver_logo.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 240px auto;
+  color: transparent;
+  font-size: 0;
+}
+#content {
+  width: 460px;
+  margin: 0 auto;
+}
+table tr td {
+  width: 460px;
+  height: 51px;
+}
+/* 항목글자 */
+table tr td h3 {
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+table tr td input {
+  width: 334px;
+  height: 29px;
+  font-size: 15px;
+  border-width: 0;
+}
+/* input-box 공통 */
+table tr td .input-box {
+  position: relative;
+  width: 460px;
+  height: 50px;
+  background: white;
+  line-height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #dadada;
+}
+/* 아이디 텍스트 */
+table tr td .input-box .txt {
+  position: absolute;
+  top: 16px;
+  right: 13px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8e8e8e;
+}
+/* 이름 본인확인이메일*/
+table tr:nth-child(4) td input
+,table tr:nth-child(7) td input {
+  width: 100%;
+  height: 29px;
+  line-height: 29px;
+  box-sizing: border-box;
+  padding-right: 50px;
+}
+/* 생년월일 */
+table tr:nth-child(5) td input {
+  width: 100px;
+  height: 29px;
+}
+table tr td .input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table tr td .input-group #year{
+  width: 30%;
+  font-size: 14px;
+}
+table tr td .input-group #month {
+  width: 30%;
+  font-size: 14px;
+}
+table tr td .input-group #date {
+  width: 30%;
+  font-size: 14px;
+}
+
+/* 성별 */
+#gender {
+  width: 100%;
+  font-size: 14px;
+}
+
+table tr td .input-box.phone {
+  width: 460px;
+  height: 216px;
+}
+table tr td input:focus {
+  border: 1px solid red;
+}
+.btn-area {
+  width: 460px;
+  height: 53px;
+}
+#sign {
+  color: #fff;
+  border: solid 1px rgba(0,0,0,.08);
+  background-color: #03c75a;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  padding: 15px 0 15px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}

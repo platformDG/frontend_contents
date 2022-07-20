@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* 웹브라우져 기본 마진, 패딩을 초기화 */
+* { margin: 0; padding: 0; }
+/* ul점이 사라지는 것 */
+ ul,ol,li {list-style: none;}
+ /* a태그의 밑줄과 색깔을 변경 */
+ a { text-decoration: none; color: #666666; }

@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* @import는 최상단에 등록한다. */
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+body{
+  /* background: red; */
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.wrap-box{
+  position: relative;
+  margin-top: 500px;
+  width: 800px;
+  height: 800px;
+  background: gray;
+}
+.box{
+  width: 250px;
+  height: 250px;
+  background: red;
+  top: -100px;
+  font-size: 32px;
+  color: white;
+  /* line-height: 250px; */
+  /* text-align: center; */
+}
+.box.rel {
+  position: relative; /* 본인의 초기영역을 유지한다. */
+}
+.box.abs{
+  position: absolute; /* 부모 요소 중 static이 아닌 positon 속성을 갖고 있는  요소를 기준으로 위치 값을 갖는다,. */
+  top: 0;
+}
+.box.abs:nth-child(1){
+  z-index: 1;
+  top: 50px;
+  left: 50px;
+}
+.box.abs:nth-child(2){
+  z-index: 2;
+  top: 100px;
+  left: 100px;
+  background: blue;
+}
+.box.abs:nth-child(3){
+  z-index: 4;
+  top: 150px;
+  left: 150px;
+  background: yellow;
+}
+.box.abs:nth-child(4){
+  z-index: 3;
+  top: 200px;
+  left: 200px;
+  background: green;
+}
+.box.abs:nth-child(5){
+  /* z-index: -10; */
+  top: 250px;
+  left: 250px;
+  background: purple;
+}

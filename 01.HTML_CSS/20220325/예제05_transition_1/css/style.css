@@ -1,0 +1,35 @@
+@charset "UTF-8";
+html, body { height: 100%; }
+div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  color: black;
+  background-color: rgba(237, 177, 12, 1);
+  box-shadow: 0px 0px 0px rgba( 0, 0, 0, 1 );
+  border-radius: 0;
+  /* opacity: .4; */
+  /* transition-property: border-radius, box-shadow ,top, left, width, background-color, height, opacity; */
+  transition: : all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+  /* transition-delay: 1s; */
+  /* transition: all 0.5s 1s ease-in; */
+}
+
+div:hover {
+  /* width: 500px;
+  height: 800px; */
+  top: 10px;
+  left: 10px;
+  background-color: rgba(218, 12, 237, 1);
+  /* opacity: 1; */
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 50%
+}

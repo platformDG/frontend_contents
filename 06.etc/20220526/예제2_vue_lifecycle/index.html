@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>vue.js life cycle</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{message}}</h1>
+      <p>{{nowDate}}</p>
+      <p>{{number}}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      let app = new Vue({
+        el: '#app',
+        data: {
+          message:'Hello Vue.js!!!',
+          nowDate: '2022-05-26',
+          number: 0,
+        },
+        beforeCreate: function(){
+          console.log("beforeCreate");
+          console.log(this.message);
+        },
+        created: function(){
+          console.log("created!!");
+          console.log(this.message);
+        },
+        mounted: function(){
+          console.log("mounted!!");
+          console.log(this.message);
+          this.message ="HI Vue!!!";
+          console.log(this.message);
+          this.number = 200;
+        },
+        update: function(){
+          console.log("update!");
+          console.log(this.message);
+        }
+
+      });
+    </script>
+  </body>
+</html>
